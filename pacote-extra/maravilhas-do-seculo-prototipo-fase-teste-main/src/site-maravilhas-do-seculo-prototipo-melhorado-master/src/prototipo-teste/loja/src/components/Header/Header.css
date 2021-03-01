@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+}
+.componentLitleDevice{
+    display: none;
+}
+.componetLargeDevice{
+    background-color: #25D7FE;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.componentLink{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1%;
+    text-shadow: 1px 1px 1px black;
+
+    transition-property: color ,background-color;
+    transition-duration: 0.5s;
+}
+.componentLink:hover{
+    background-color: rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px whitesmoke;
+    color: rgba(224, 38, 38, 0.767);
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.componentLitleDeviceTog,.componentLitleDeviceClose{
+    display: none;
+}
+
+
+
+@media(max-width:500px){
+
+    /* reabilitar ao resolver o problema de sobreposição de objetos
+     e hidden attributes
+    */
+
+    .componetLargeDevice{
+        display: none;
+    }
+    .componentLitleDeviceTog{
+         background-color: #25D7FE;
+         height: 70px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: end;
+         align-items: flex-end;
+        
+     }
+     .componentLitleDeviceClose{
+        background-color: #25D7FE;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        margin-bottom: 15.3em;
+     }
+     .componentHeader{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin-right: 10px;
+     }
+     .componentTog,.componentClose{
+         margin: 29px 25px;
+         height: 40px;
+         width: 50px;
+         cursor: pointer;
+     }
+     .componentLinkHome,.componentLinkFormulario,.componentLinkSobre{
+         font-size: 20px;
+     }
+     .componentLinkHome{
+         margin-top: -45px;
+         background: rgb(65, 65, 65);
+         margin-right: 10px;
+         padding: 5px;
+         color:#25D7FE;
+         cursor: pointer;
+     }
+     .componentLinkHome:hover{
+         background: rgba(0,0,0,0.6); 
+         color: whitesmoke;
+     }
+     .LinkHome{
+        text-decoration: none;
+        color:#25D7FE;
+        font-size: small;
+    }
+    .LinkHome:hover{
+       text-decoration: none;
+       color: whitesmoke;
+   }
+   .componentLinkLogo{
+      display:none;
+   }
+   .logoLittle{
+        height: 40px;
+        width: 40px;
+        }
+     .componentLinkFormulario{
+         font-size: 20px;
+         background: rgb(65, 65, 65);
+         margin-right: 10px;
+         padding: 5px;
+         color:#25D7FE;
+         cursor: pointer;
+     }
+     .componentLinkFormulario:hover{
+         background: rgba(0,0,0,0.6); 
+         color: whitesmoke;
+     }
+     .LinkFaleConosco{
+        text-decoration: none;
+        color:#25D7FE;
+        font-size: small;
+    
+     }
+     .LinkFaleConosco:hover{
+        text-decoration: none;
+        color: whitesmoke;
+     }
+     .componentLinkSobre{
+         font-size: 20px;
+         background: rgb(65, 65, 65);
+         margin-right: 10px;
+         padding: 5px;
+         color:#25D7FE;
+         cursor: pointer;
+     }
+     .componentLinkSobre:hover{
+         background: rgba(0,0,0,0.6); 
+         color: whitesmoke;
+     }
+     .LinkSobre{
+        text-decoration: none;
+        color:#25D7FE;
+        font-size: small;
+     }
+     .LinkSobre:hover{
+        text-decoration: none;
+        color: whitesmoke; 
+     }
+     .componentLinkLoja{
+        font-size: 20px;
+        background: rgb(65, 65, 65);
+        margin-right: 10px;
+        padding: 5px;
+        color:#25D7FE;
+        cursor: pointer;
+    }
+    .componentLinkLoja:hover{
+        background: rgba(0,0,0,0.6); 
+        color: whitesmoke;
+    }
+    .LinkLoja{
+        text-decoration: none;
+        color:#25D7FE;
+        font-size: small;
+    }
+    .LinkLoja:hover{
+        text-decoration: none;
+        color: whitesmoke; 
+    }
+
+}
+
+
+
+
